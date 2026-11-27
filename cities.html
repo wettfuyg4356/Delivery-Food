@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Города доставки — Delivery Food</title>
+  <meta name="description" content="Москва, Балашиха, Люберцы, Жуковский, Раменское, Королёв — доставка еды в шести городах.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="topline">
+    <div class="container topline__inner">
+      <span>Доставка еды · Москва и область</span>
+      <span>Ежедневно 10:00–23:00 · <a href="tel:+78001234567">8 800 123-45-67</a></span>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="Delivery Food — главная">
+        <span class="brand__mark" aria-hidden="true">DF</span>
+        <span class="brand__text">Delivery Food<small>доставка еды</small></span>
+      </a>
+
+      <nav class="nav" aria-label="Основная навигация">
+        <a class="nav__link" href="index.html">Главная</a>
+        <a class="nav__link" href="menu.html">Меню</a>
+        <a class="nav__link is-active" href="cities.html" aria-current="page">Города</a>
+      </nav>
+
+      <button class="cart-button" type="button" data-cart-open aria-label="Открыть корзину">
+        Корзина <span class="cart-count">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-head container">
+      <div class="breadcrumbs">
+        <a href="index.html">Главная</a> / <span>Города</span>
+      </div>
+      <span class="eyebrow">06 / География</span>
+      <h1>Города доставки</h1>
+      <p class="page-head__lead">
+        Шесть городов Московской области и столицы. Выберите свой — и на странице меню
+        появится отметка о городе доставки. Кухню можно будет сменить в любой момент.
+      </p>
+    </section>
+
+    <!-- Карточки городов заданы прямо в HTML -->
+    <section class="section container">
+      <div class="city-grid">
+
+        <a class="city-card city-card--moscow" href="menu.html?city=moscow">
+          <div class="city-card__media">
+            <img src="img/moskva.jpg" alt="Москва — город доставки" loading="lazy">
+            <span class="city-card__index">01</span>
+          </div>
+          <span class="city-card__latin">Moscow</span>
+          <h3>Москва</h3>
+          <p>Центр, Хамовники, Пресня. 24 ресторана.</p>
+          <span class="city-card__link">Выбрать кухню <span aria-hidden="true">→</span></span>
+        </a>
+
+        <a class="city-card city-card--balashikha" href="menu.html?city=balashikha">
+          <div class="city-card__media">
+            <img src="img/balashiha.jpg" alt="Балашиха — город доставки" loading="lazy">
+            <span class="city-card__index">02</span>
+          </div>
+          <span class="city-card__latin">Balashikha</span>
+          <h3>Балашиха</h3>
+          <p>Заречье, Южный, Леоново. 11 ресторанов.</p>
+          <span class="city-card__link">Выбрать кухню <span aria-hidden="true">→</span></span>
+        </a>
+
+        <a class="city-card city-card--lyubertsy" href="menu.html?city=lyubertsy">
+          <div class="city-card__media">
+            <img src="img/lyubertsy.jpg" alt="Люберцы — город доставки" loading="lazy">
+            <span class="city-card__index">03</span>
+          </div>
+          <span class="city-card__latin">Lyubertsy</span>
+          <h3>Люберцы</h3>
+          <p>Центр, Октябрьский, Волковская. 8 ресторанов.</p>
+          <span class="city-card__link">Выбрать кухню <span aria-hidden="true">→</span></span>
+        </a>
+
+        <a class="city-card city-card--zhukovsky" href="menu.html?city=zhukovsky">
+          <div class="city-card__media">
+            <img src="img/zhukovskiy.jpg" alt="Жуковский — город доставки" loading="lazy">
+            <span class="city-card__index">04</span>
+          </div>
+          <span class="city-card__latin">Zhukovsky</span>
+          <h3>Жуковский</h3>
+          <p>Авиагородок, Центр, Костино. 6 ресторанов.</p>
+          <span class="city-card__link">Выбрать кухню <span aria-hidden="true">→</span></span>
+        </a>
+
+        <a class="city-card city-card--ramenskoye" href="menu.html?city=ramenskoye">
+          <div class="city-card__media">
+            <img src="img/ramensoke.jpg" alt="Раменское — город доставки" loading="lazy">
+            <span class="city-card__index">05</span>
+          </div>
+          <span class="city-card__latin">Ramenskoye</span>
+          <h3>Раменское</h3>
+          <p>Центр, Южный, Гжелка. 7 ресторанов.</p>
+          <span class="city-card__link">Выбрать кухню <span aria-hidden="true">→</span></span>
+        </a>
+
+        <a class="city-card city-card--korolev" href="menu.html?city=korolev">
+          <div class="city-card__media">
+            <img src="img/korolev.jpg" alt="Королёв — город доставки" loading="lazy">
+            <span class="city-card__index">06</span>
+          </div>
+          <span class="city-card__latin">Korolev</span>
+          <h3>Королёв</h3>
+          <p>Центр, Подлипки, Болшево. 9 ресторанов.</p>
+          <span class="city-card__link">Выбрать кухню <span aria-hidden="true">→</span></span>
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col">
+          <div class="brand">
+            <span class="brand__mark" aria-hidden="true">DF</span>
+            <span class="brand__text">Delivery Food<small>доставка еды</small></span>
+          </div>
+          <p class="footer__intro">Кухни мира с доставкой на дом. Строго, просто и вовремя.</p>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__title">Навигация</h4>
+          <a href="index.html">Главная</a>
+          <a href="menu.html">Меню</a>
+          <a href="cities.html">Города</a>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__title">Контакты</h4>
+          <a href="tel:+78001234567">8 800 123-45-67</a>
+          <a href="mailto:hello@deliveryfood.ru">hello@deliveryfood.ru</a>
+          <p>Ежедневно 10:00–23:00</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span data-year>2026</span> Delivery Food</span>
+        <span>Москва и область</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="scrim" id="scrim"></div>
+  <aside class="drawer" id="cartDrawer" aria-label="Корзина">
+    <div class="drawer__head">
+      <span>Корзина</span>
+      <button class="drawer__close" type="button" data-cart-close aria-label="Закрыть корзину">×</button>
+    </div>
+    <div class="drawer__body" id="cartItems"></div>
+    <div class="drawer__foot">
+      <label class="cart-address">Ваше имя
+        <input id="customerName" type="text" placeholder="Как к вам обращаться" autocomplete="name">
+      </label>
+      <label class="cart-address">Телефон
+        <input id="customerPhone" type="tel" placeholder="+7 (999) 123-45-67" autocomplete="tel">
+      </label>
+      <label class="cart-address">Адрес доставки
+        <input id="deliveryAddress" type="text" placeholder="Улица, дом, квартира" autocomplete="street-address">
+      </label>
+      <label class="cart-address">Комментарий (необязательно)
+        <input id="orderComment" type="text" placeholder="Например, без лука">
+      </label>
+      <div class="total-row"><span>Итого</span><span id="cartTotal">0 ₽</span></div>
+      <button class="button button--dark" id="checkout" type="button" disabled>Оформить заказ</button>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

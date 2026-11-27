@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delivery Food — кухни мира с доставкой на дом</title>
+  <meta name="description" content="Девять кухонь мира, шесть городов доставки. Выберите кухню, соберите корзину и дождитесь курьера.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Верхняя тонкая полоса -->
+ <div class="topline">
+    <div class="container topline__inner">
+      <span>Доставка еды · Москва и область</span>
+      <span>Ежедневно 10:00–23:00 · <a href="tel:+78001234567">8 800 123-45-67</a></span>
+    </div>
+  </div>
+
+  <!-- Шапка -->
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="Delivery Food — главная">
+        <span class="brand__mark" aria-hidden="true">DF</span>
+        <span class="brand__text">Delivery Food<small>доставка еды</small></span>
+      </a>
+
+      <nav class="nav" aria-label="Основная навигация">
+        <a class="nav__link is-active" href="index.html" aria-current="page">Главная</a>
+        <a class="nav__link" href="menu.html">Меню</a>
+        <a class="nav__link" href="cities.html">Города</a>
+      </nav>
+
+      <button class="cart-button" type="button" data-cart-open aria-label="Открыть корзину">
+        Корзина <span class="cart-count">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero section -->
+    <section class="hero container">
+      <div class="hero__content">
+        <span class="eyebrow">Сервис доставки · с 2026 года</span>
+        <h1>Кухни мира,<br>доставленные <em>к двери</em></h1>
+        <p class="hero__lead">
+          Девять кухонь, шесть городов и одна простая идея: любимое блюдо должно быть рядом.
+          Выберите страну, откройте меню и соберите заказ в пару кликов.
+        </p>
+
+        <div class="hero__actions">
+          <a class="button button--dark" href="#cuisines">Выбрать кухню</a>
+          <a class="button button--line" href="menu.html">Открыть меню</a>
+        </div>
+
+        <dl class="hero__stats">
+          <div><dt>09</dt><dd>кухонь мира</dd></div>
+          <div><dt>06</dt><dd>городов доставки</dd></div>
+          <div><dt>50 мин</dt><dd>среднее время</dd></div>
+        </dl>
+      </div>
+
+      <div class="hero__visual">
+        <div class="hero__frame">
+          <img src="img/d6fb0584a5ee780e7ea4b02e7f097396.jpg" alt="Блюдо на столе в строгой сервировке">
+        </div>
+      </div>
+    </section>
+
+    <!-- Выбор кухни: карточки заданы прямо в HTML -->
+    <section class="section container" id="cuisines">
+      <div class="section__head">
+        <div>
+          <span class="eyebrow">01 / Выбор</span>
+          <h2 class="section__title">Выберите кухню</h2>
+        </div>
+        <p class="section__note">
+          У каждой страны свой характер: своя палитра, свои продукты и свои вкладки в меню.
+          Нажмите на карточку — и вы окажетесь среди её блюд.
+        </p>
+      </div>
+
+      <div class="cuisine-grid">
+
+        <a class="cuisine-card cuisine-card--italian" href="menu.html?cuisine=italian">
+          <div class="cuisine-card__media">
+            <img src="img/ItalianKitchen.jpg" alt="Итальянская кухня: паста и пицца" loading="lazy">
+            <span class="cuisine-card__index">01</span>
+          </div>
+          <span class="cuisine-card__native">Italia</span>
+          <h3>Итальянская</h3>
+          <p>Паста, пицца, оливковое масло и неспешные ужины.</p>
+          <span class="cuisine-card__link">Открыть меню <span aria-hidden="true">→</span></span>
+        </a>
+
+        <a class="cuisine-card cuisine-card--russian" href="menu.html?cuisine=russian">
+          <div class="cuisine-card__media">
+            <img src="img/RussianFood.jpg" alt="Русская кухня: борщ и пирожки" loading="lazy">
+            <span class="cuisine-card__index">02</span>
+          </div>
+          <span class="cuisine-card__native">Русь</span>
+          <h3>Русская</h3>
+          <p>Борщ, пирожки, гречка и домашнее тепло в каждой тарелке.</p>
+          <span class="cuisine-card__link">Открыть меню <span aria-hidden="true">→</span></span>
+        </a>
+
+        <a class="cuisine-card cuisine-card--japanese" href="menu.html?cuisine=japanese">
+          <div class="cuisine-card__media">
+            <img src="img/Japaneesefood.jpg" alt="Японская кухня: роллы и мисо-суп" loading="lazy">
+            <span class="cuisine-card__index">03</span>
+          </div>
+          <span class="cuisine-card__native">日本</span>
+          <h3>Японская</h3>
+          <p>Роллы, мисо, рамен и точность каждой детали.</p>
+          <span class="cuisine-card__link">Открыть меню <span aria-hidden="true">→</span></span>
+        </a>
+
+        <a class="cuisine-card cuisine-card--french" href="menu.html?cuisine=french">
+          <div class="cuisine-card__media">
+            <img src="img/Francefood.jpg" alt="Французская кухня: соусы и десерты" loading="lazy">
+            <span class="cuisine-card__index">04</span>
+          </div>
+          <span class="cuisine-card__native">France</span>
+          <h3>Французская</h3>
+          <p>Соусы, вино, луковый суп и десерты на каждый день.</p>
+          <span class="cuisine-card__link">Открыть меню <span aria-hidden="true">→</span></span>
+        </a>
+
+        <a class="cuisine-card cuisine-card--american" href="menu.html?cuisine=american">
+          <div class="cuisine-card__media">
+            <img src="img/americanfood.jpg" alt="Американская кухня: бургеры и фри" loading="lazy">
+            <span class="cuisine-card__index">05</span>
+          </div>
+          <span class="cuisine-card__native">USA</span>
+          <h3>Американская</h3>
+          <p>Бургеры, фри, барбекю и большие порции.</p>
+          <span class="cuisine-card__link">Открыть меню <span aria-hidden="true">→</span></span>
+        </a>
+
+        <a class="cuisine-card cuisine-card--english" href="menu.html?cuisine=english">
+          <div class="cuisine-card__media">
+            <img src="img/britainfood.jpg" alt="Английская кухня: рыба с картофелем" loading="lazy">
+            <span class="cuisine-card__index">06</span>
+          </div>
+          <span class="cuisine-card__native">England</span>
+          <h3>Английская</h3>
+          <p>Fish &amp; chips, ростбиф, йоркшир и чай с молоком.</p>
+          <span class="cuisine-card__link">Открыть меню <span aria-hidden="true">→</span></span>
+        </a>
+
+        <a class="cuisine-card cuisine-card--belarusian" href="menu.html?cuisine=belarusian">
+          <div class="cuisine-card__media">
+            <img src="img/belarusfood.jpg" alt="Белорусская кухня: драники и холодник" loading="lazy">
+            <span class="cuisine-card__index">07</span>
+          </div>
+          <span class="cuisine-card__native">Беларусь</span>
+          <h3>Белорусская</h3>
+          <p>Драники, холодник, мачанка и деревенский сырник.</p>
+          <span class="cuisine-card__link">Открыть меню <span aria-hidden="true">→</span></span>
+        </a>
+
+        <a class="cuisine-card cuisine-card--korean" href="menu.html?cuisine=korean">
+          <div class="cuisine-card__media">
+            <img src="img/southkoreafood.jpg" alt="Корейская кухня: кимчи и бибимбап" loading="lazy">
+            <span class="cuisine-card__index">08</span>
+          </div>
+          <span class="cuisine-card__native">한국</span>
+          <h3>Корейская</h3>
+          <p>Кимчи, бибимбап, ттокбокки и острые соусы.</p>
+          <span class="cuisine-card__link">Открыть меню <span aria-hidden="true">→</span></span>
+        </a>
+
+        <a class="cuisine-card cuisine-card--chinese" href="menu.html?cuisine=chinese">
+          <div class="cuisine-card__media">
+            <img src="img/chineesefood.jpg" alt="Китайская кухня: вонтоны и утка" loading="lazy">
+            <span class="cuisine-card__index">09</span>
+          </div>
+          <span class="cuisine-card__native">中国</span>
+          <h3>Китайская</h3>
+          <p>Вонтоны, утка по-пекински, цзяоцзы и лагман.</p>
+          <span class="cuisine-card__link">Открыть меню <span aria-hidden="true">→</span></span>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- Как это работает -->
+    <section class="section container">
+      <span class="eyebrow">02 / Порядок</span>
+      <div class="steps__grid">
+        <article class="step">
+          <span class="step__num">01</span>
+          <h3>Выберите кухню</h3>
+          <p>Девять стран, каждая со своим набором вкладок и блюд.</p>
+        </article>
+        <article class="step">
+          <span class="step__num">02</span>
+          <h3>Соберите корзину</h3>
+          <p>Добавляйте блюда — они сохранятся даже после перезагрузки.</p>
+        </article>
+        <article class="step">
+          <span class="step__num">03</span>
+          <h3>Встретьте курьера</h3>
+          <p>Укажите адрес, оформите заказ и дождитесь горячей еды.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Города: короткий анонс -->
+    <section class="section container">
+      <div class="section__head">
+        <div>
+          <span class="eyebrow">03 / География</span>
+          <h2 class="section__title">Города доставки</h2>
+        </div>
+        <a class="section__link" href="cities.html">Все города →</a>
+      </div>
+
+      <div class="city-grid city-grid--preview">
+        <a class="city-card city-card--moscow" href="cities.html">
+          <div class="city-card__media">
+            <img src="img/moskva.jpg" alt="Москва" loading="lazy">
+            <span class="city-card__index">01</span>
+          </div>
+          <span class="city-card__latin">Moscow</span>
+          <h3>Москва</h3>
+          <p>Центр, Хамовники, Пресня. 24 ресторана.</p>
+          <span class="city-card__link">Смотреть город <span aria-hidden="true">→</span></span>
+        </a>
+
+        <a class="city-card city-card--balashikha" href="cities.html">
+          <div class="city-card__media">
+            <img src="img/balashiha.jpg" alt="Балашиха" loading="lazy">
+            <span class="city-card__index">02</span>
+          </div>
+          <span class="city-card__latin">Balashikha</span>
+          <h3>Балашиха</h3>
+          <p>Заречье, Южный, Леоново. 11 ресторанов.</p>
+          <span class="city-card__link">Смотреть город <span aria-hidden="true">→</span></span>
+        </a>
+
+        <a class="city-card city-card--lyubertsy" href="cities.html">
+          <div class="city-card__media">
+            <img src="img/lyubertsy.jpg" alt="Люберцы" loading="lazy">
+            <span class="city-card__index">03</span>
+          </div>
+          <span class="city-card__latin">Lyubertsy</span>
+          <h3>Люберцы</h3>
+          <p>Центр, Октябрьский, Волковская. 8 ресторанов.</p>
+          <span class="city-card__link">Смотреть город <span aria-hidden="true">→</span></span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Подвал -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col">
+          <div class="brand">
+            <span class="brand__mark" aria-hidden="true">DF</span>
+            <span class="brand__text">Delivery Food<small>доставка еды</small></span>
+          </div>
+          <p class="footer__intro">
+            Кухни мира с доставкой на дом. Строго, просто и вовремя.
+          </p>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__title">Навигация</h4>
+          <a href="index.html">Главная</a>
+          <a href="menu.html">Меню</a>
+          <a href="cities.html">Города</a>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__title">Контакты</h4>
+          <a href="tel:+78001234567">8 800 123-45-67</a>
+          <a href="mailto:hello@deliveryfood.ru">hello@deliveryfood.ru</a>
+          <p>Ежедневно 10:00–23:00</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span data-year>2026</span> Delivery Food</span>
+        <span>Москва и область</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Корзина -->
+  <div class="scrim" id="scrim"></div>
+  <aside class="drawer" id="cartDrawer" aria-label="Корзина">
+    <div class="drawer__head">
+      <span>Корзина</span>
+      <button class="drawer__close" type="button" data-cart-close aria-label="Закрыть корзину">×</button>
+    </div>
+    <div class="drawer__body" id="cartItems"></div>
+    <div class="drawer__foot">
+      <label class="cart-address">Ваше имя
+        <input id="customerName" type="text" placeholder="Как к вам обращаться" autocomplete="name">
+      </label>
+      <label class="cart-address">Телефон
+        <input id="customerPhone" type="tel" placeholder="+7 (999) 123-45-67" autocomplete="tel">
+      </label>
+      <label class="cart-address">Адрес доставки
+        <input id="deliveryAddress" type="text" placeholder="Улица, дом, квартира" autocomplete="street-address">
+      </label>
+      <label class="cart-address">Комментарий (необязательно)
+        <input id="orderComment" type="text" placeholder="Например, без лука">
+      </label>
+      <div class="total-row"><span>Итого</span><span id="cartTotal">0 ₽</span></div>
+      <button class="button button--dark" id="checkout" type="button" disabled>Оформить заказ</button>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- Данные и Логика -->
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
